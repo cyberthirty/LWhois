@@ -4,18 +4,34 @@ import whois
 import argparse
 import sys
 from pprint import pprint
+import os
 
+def clear():
+ 
+    # for windows
+    if os.name == 'nt':
+        _ = os.system('cls')
+ 
+    # for mac and linux(here, os.name is 'posix')
+    else:
+        _ = os.system('clear')
 
-banner = r"""
-                 _ __        ___           _
-                | |\ \      / / |__   ___ (_)___   _ __  _   _
-                | | \ \ /\ / /| '_ \ / _ \| / __| | '_ \| | | |
-                | |__\ V  V / | | | | (_) | \__ \_| |_) | |_| |
-                |_____\_/\_/  |_| |_|\___/|_|___(_) .__/ \__, |
-                                                  |_|    |___/
-                               by cyberthirty
-"""
-print("\033[34m"+banner+"\033[0m")
+def banner():
+    blink = "\033[5m"
+    blue = "\033[34m"
+    reset ="\033[0m"
+
+    banner = r"""
+                     _ __        ___           _
+                    | |\ \      / / |__   ___ (_)___   _ __  _   _
+                    | | \ \ /\ / /| '_ \ / _ \| / __| | '_ \| | | |
+                    | |__\ V  V / | | | | (_) | \__ \_| |_) | |_| |
+                    |_____\_/\_/  |_| |_|\___/|_|___(_) .__/ \__, |
+                                                      |_|    |___/
+                                   by cyberthirty
+    """
+    print(f"{blue}{blink}{banner}{reset}")
+
 
 def whoisLookup(domain):
     try:
@@ -25,6 +41,8 @@ def whoisLookup(domain):
         print(f"Error: {e}")
 
 def runWhois():
+    clear()
+    banner()
     parser = argparse.ArgumentParser(description="WHOIS lookup.")
     parser.add_argument('-d', '--domain', type=str, required=True, help="The domain to lookup")
 
