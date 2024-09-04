@@ -2,6 +2,16 @@
 
 A LWhois is a tool or script developed in Python that queries WHOIS databases to retrieve information about a domain name. WHOIS databases contain registration details for domain names, including the registrant's contact information, registration and expiration dates, and other related data.
 
+```python
+                 _ __        ___           _
+                | |\ \      / / |__   ___ (_)___   _ __  _   _
+                | | \ \ /\ / /| '_ \ / _ \| / __| | '_ \| | | |
+                | |__\ V  V / | | | | (_) | \__ \_| |_) | |_| |
+                |_____\_/\_/  |_| |_|\___/|_|___(_) .__/ \__, |
+                                                  |_|    |___/
+                             by cyberthirty
+```
+
 ## Installation
 
 1. **Clone the Repository**:
