@@ -35,7 +35,7 @@ A LWhois is a tool or script developed in Python that queries WHOIS databases to
 To perform a WHOIS lookup for a domain, use the following command:
 
 ```bash
-./whois_lookup.py -d example.com
+./LWhois.py -d example.com
 ```
 
 ### Options
