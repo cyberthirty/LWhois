@@ -6,7 +6,7 @@ import sys
 from pprint import pprint
 
 
-banner ="""
+banner = r"""
                  _ __        ___           _
                 | |\ \      / / |__   ___ (_)___   _ __  _   _
                 | | \ \ /\ / /| '_ \ / _ \| / __| | '_ \| | | |
@@ -15,7 +15,7 @@ banner ="""
                                                   |_|    |___/
                                by cyberthirty
 """
-print(banner)
+print("\033[34m"+banner+"\033[0m")
 
 def whoisLookup(domain):
     try:
