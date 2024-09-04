@@ -46,7 +46,7 @@ To perform a WHOIS lookup for a domain, use the following command:
 ## Example
 
 ```bash
-./whois_lookup.py -d example.com
+./LWhois.py -d example.com
 ```
 
 
