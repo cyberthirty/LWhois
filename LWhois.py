@@ -5,6 +5,18 @@ import argparse
 import sys
 from pprint import pprint
 
+
+banner ="""
+                 _ __        ___           _
+                | |\ \      / / |__   ___ (_)___   _ __  _   _
+                | | \ \ /\ / /| '_ \ / _ \| / __| | '_ \| | | |
+                | |__\ V  V / | | | | (_) | \__ \_| |_) | |_| |
+                |_____\_/\_/  |_| |_|\___/|_|___(_) .__/ \__, |
+                                                  |_|    |___/
+                               by cyberthirty
+"""
+print(banner)
+
 def whoisLookup(domain):
     try:
         hostInfo = whois.whois(domain)
