@@ -16,9 +16,8 @@ A LWhois is a tool or script developed in Python that queries WHOIS databases to
   ```
 
 3. **Install Dependencies**:
-  Ensure you have the `whois` Python package installed:
   ```bash
-  pip install python-whois
+  pip install -r requirements.txt
   ```
 
 ## Usage
@@ -40,10 +39,6 @@ To perform a WHOIS lookup for a domain, use the following command:
 ./whois_lookup.py -d example.com
 ```
 
-
-### **Step 5: Share Your Repository**
-
-Once everything is set up, you can share the link to your repository with others so they can use and contribute to your WHOIS lookup tool.
 
 ## License
 
